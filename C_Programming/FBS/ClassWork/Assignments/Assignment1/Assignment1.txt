@@ -1,0 +1,120 @@
+Assignment 1 :
+#include<stdio.h>  
+                   void main()   
+                   {   
+                   float fahrenheit, celsius;  
+                   celsius = 24;  
+                   fahrenheit =( (celsius*9)/5)+32;  
+                   printf("\n\n Temperature in fahrenheit is:  %f",fahrenheit);
+    }  
+
+Assignment 2 :
+#include<stdio.h>
+void main()
+{
+    int l=10,b=20;
+    if(l,b>0){
+        printf("Area of rectangle is : %d\n",l*b);
+        printf("Peremeter of rectangle is : %d",(l+b)*2);
+
+    }
+    else{
+        printf("Wrong input");
+    }
+}
+
+Assignment 3 :
+#include<stdio.h>
+void main(){
+    int num  = 123;
+    if(num >99 && num<1000){
+        
+        int sum =0,rev=0;
+        int var = num%10;
+        sum = sum+var;
+        rev=(rev*10)+var;
+
+        num = num/10;
+        var = num%10;
+        sum = sum+var;
+        rev= (rev*10)+var;
+
+        num = num/10;
+        var = num%10;
+        sum = sum +var;
+        rev = (rev*10)+var;
+        printf("The sum of numbers is : %d\n",sum);
+        printf("The reverse of the number is : %d",rev);
+        
+
+    }
+    else{
+        printf("Wrong Inpurt");
+    }
+}
+
+
+Assignment 4 :
+#include<stdio.h>
+void main(){
+    int num = 100;
+    if(num%2==0){
+        printf("%d is an even number\n",num);
+
+    }
+    else{
+        printf("%d is an odd number",num);
+    }
+}
+
+
+Assignment 5 :
+#include<stdio.h>
+void main(){
+    float basicSal=10000;
+    float sal;
+    
+    int da,ta,hra;
+    
+    
+    
+    if(basicSal>=5000){
+        da = basicSal*0.1;
+        ta = basicSal*0.2;
+        hra = basicSal*0.25;
+        sal = da+ta+hra;
+        printf("Salary = %f",sal);
+        
+    }
+    else{
+        da = basicSal*0.1;
+        ta = basicSal*0.2;
+        hra = basicSal*0.25;
+        sal = da+ta+hra;
+        printf("%f",sal);
+    }
+
+}
+
+
+Assignment 6 :
+#include<stdio.h>
+void main(){
+    int ageOfMale = 24;
+    int ageOfFemale = 20;
+
+    if(ageOfMale>=21 && ageOfFemale>=18){
+        printf("Both are eligible for marry\n");
+    }
+    else if(ageOfMale<21 || ageOfFemale>=18){
+        printf("Female is eligible for marry");
+    }
+    else if(ageOfMale>=21 || ageOfFemale<18){
+        printf("Male is eligible for marry");
+    }
+    else{
+        printf("Both are not eligible for marry");
+    }
+   
+    
+}
